@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+
+    -------------  TYPOGRAPHY -------------
+    FONT SIZES
+    12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px / 
+
+    FONT WEIGHT 
+    400 / 700
+
+    LINE HEIGHT 
+    1.2 / 1.5
+
+    LETTER SPACING 
+    0 / -2px
+
+    FONT FAMILY
+    Poppins
+
+    ------------- COLORS  ------------- 
+
+    PRIMARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    SECONDARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    TERTIARY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+    GREY
+    Base: #fff  (white)
+    Tint: #fff  (white)
+    Shade: #fff  (white)
+
+*/
+
+
+:root{
+    /* colors */
+    --secondary-color:#f8f9fa;
+    --heading-color:#303735;
+    --text-color:#7b7b7b;
+
+    /* transition and box-shadow */
+    --transition: all 0.5s;
+    --box-shadow: inset  rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* --------------------------- GLOBAL STYLE  ---------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+h1, h2, h3, h4{
+    color: var(--heading-color);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight:400;
+}
+
+p{
+    font-size: 1.7rem;
+    color:var(--text-color);
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+a{
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+i{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* --------------------------- COMPONENTS  ---------------------------*/
+
+/* --------------------------- SECTIONS  ---------------------------*/
+.main-header-section {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    background: #e6d9e6;
+    background: linear-gradient(90deg,rgba(173, 156, 173, 1) 0%, rgba(255, 219, 156, 1) 50%, rgb(155, 244, 244) 80%);
+    height: 65vh;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.main-header-section .main-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.main-header-section .main-header-content .social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+/* HERO SECTION */
+
+.main-header-section .hero-section-container {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.main-header-section .hero-section-container .main-para {
+    max-width: 500px;
+}
+
+
+/* MAIN SECTION */
+.section-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.section-container .content-container {
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section-container .content-container .list-container {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    background-color: hsl(0, 0%, 92%);
+    padding:1.5rem 2rem;
+    gap: 2rem;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.section-container .content-container .list-container li a {
+    font-size: 2rem;
+    font-weight:400;
+    transition: 0.5s;
+}
+
+.section-container .project-container {
+    margin-top: 5rem;
+    max-width: 800px;
+    display: none;
+}
+
+
+.section-container .project-container .project {
+    display: flex;
+    gap: 2rem;
+} 
+
+.section-container .project-container .project-content{
+    display: flex;
+    flex-direction:column ;
+    gap: 3rem;
+}
+
+.section-container .project-container .project .project-status .heading {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* javascript part */
+.list-container a.active{
+    background-color: rgb(215, 210, 215) ;
+    padding: .7rem 3rem;
+    border-radius: 4px;
+}
+
+
+/* project container */
+.project-container.showContainer{
+    display: block;
+}
+ 
+
+
+
+

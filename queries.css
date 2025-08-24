@@ -1,0 +1,49 @@
+
+/* LG SCREEN */
+@media (max-width:75rem) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+/* LAPTOP  */ 
+@media (max-width: 48rem) {
+    /* max-width: 768px */
+
+    html {
+        /* font-size : 8px */
+        font-size: 50%;
+    }
+}
+
+/* SMALL */ 
+@media (max-width: 37rem ) {
+    /* max-width:589px */ 
+    html {
+        /* 7px */
+        font-size: 44%;
+    }
+
+    .main-header-section {
+        height: 40vh;
+    }
+
+    .main-header-section .hero-section-container .main-para {
+        padding: 2rem;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .section-container .content-container {
+        padding: 3rem 0rem;
+    }
+
+    .section-container .project-container .project {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
